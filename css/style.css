@@ -1,0 +1,70 @@
+/* #region spaceHolders Display */
+@media (min-width: 992px) {
+  .spaceHolder {
+    display: block;
+  }
+  .space {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .spaceHolder {
+    display: none;
+  }
+  .space {
+    display: block;
+  }
+}
+/* #endregion */
+
+/* #region header */
+.by {
+    text-align: right;
+}
+/* #endregion */
+
+
+/* #region calculator display design*/
+
+/* #endregion */
+
+/* #region calculator function*/
+
+/* #endregion */
+
+/* #region calculator buttons design*/
+
+.columnOne,
+.columnTwo,
+.columnThree,
+.columnFour,
+.columnFive,
+.columnSix,
+.columnSeven {
+  padding: 5px;
+}
+
+.displayRow {
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+.displayBox{
+  background: aliceblue;
+  border-radius: 15px;
+}
+
+.calculatorBox {
+  background-color: #e1afd1;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.numBtn {
+  color: blueviolet;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+/* #endregion */
