@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Calculator</title>
   </head>
   <body>
@@ -24,129 +32,186 @@
     <!-- END OF header CONTAINER -->
 
     <div class="calculatorContainer container-fluid">
-      <div class="calculatorBox">
+      <div class="row justify-content-center">
+        <div class="col-2 d-none d-md-block"></div>
+      </div>
+      <!-- END spaceHolder ROW -->
+      <div class="calculatorBox col-12 col-md-8 col-lg-6">
         <div class="displayRow row">
-          <div class="spaceHolder col"></div>
-          <div class="spaceHolder col"></div>
           <div class="displayBox col">
             <h1>display</h1>
           </div>
           <!-- END OF display COL -->
-          <div class="spaceHolder col"></div>
         </div>
         <!-- END OF displayRow ROW -->
 
         <div class="calculatorButtons row">
-          <div class="spaceHolder col"></div>
-
           <div class="columnOne col">
-            <button class="numBtn"><p>GT</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>GT</p>
+            </button>
           </div>
           <div class="columnTwo col">
-            <button class="numBtn"><p>7</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>7</p>
+            </button>
           </div>
           <div class="columnThree col">
-            <button class="numBtn"><p>8</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>8</p>
+            </button>
           </div>
           <div class="columnFour col">
-            <button class="numBtn"><p>9</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>9</p>
+            </button>
           </div>
           <div class="columnFive col">
-            <button class="numBtn"><p>÷</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>÷</p>
+            </button>
           </div>
           <div class="columnSix col">
-            <button class="numBtn"><p>%</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>%</p>
+            </button>
           </div>
           <div class="columnSeven col">
-            <button class="numBtn"><p>OFF</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>OFF</p>
+            </button>
           </div>
-          <div class="spaceHolder col"></div>
         </div>
         <!-- END OF calculatorButtons ROW -->
 
         <div class="calculatorButtons row">
-          <div class="spaceHolder col"></div>
           <div class="columnOne col">
-            <button class="numBtn"><p>→</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>→</p>
+            </button>
           </div>
           <div class="columnTwo col">
-            <button class="numBtn"><p>4</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>4</p>
+            </button>
           </div>
           <div class="columnThree col">
-            <button class="numBtn"><p>5</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>5</p>
+            </button>
           </div>
           <div class="columnFour col">
-            <button class="numBtn"><p>6</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>6</p>
+            </button>
           </div>
           <div class="columnFive col">
-            <button class="numBtn"><p>x</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>x</p>
+            </button>
           </div>
           <div class="columnSix col">
-            <button class="numBtn"><p>√</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>√</p>
+            </button>
           </div>
           <div class="columnSeven col">
-            <button class="numBtn"><p>MRC</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>MRC</p>
+            </button>
           </div>
-          <div class="spaceHolder col"></div>
         </div>
         <!-- END OF calculatorButtons ROW -->
 
         <div class="calculatorButtons row">
-          <div class="spaceHolder col"></div>
-
           <div class="columnOne col">
-            <button class="numBtn"><p>CE</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>CE</p>
+            </button>
           </div>
           <div class="columnTwo col">
-            <button class="numBtn"><p>1</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>1</p>
+            </button>
           </div>
           <div class="columnThree col">
-            <button class="numBtn"><p>2</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>2</p>
+            </button>
           </div>
           <div class="columnFour col">
-            <button class="numBtn"><p>3</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>3</p>
+            </button>
           </div>
           <div class="columnFive col">
-            <button class="numBtn"><p>-</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>-</p>
+            </button>
           </div>
           <div class="columnSix col">
-            <button class="numBtn"><p>=</p></button>
+            <button
+              class="btn btn-primary btn-lg numBtn"
+              style="border-radius: 100%"
+            >
+              <p>=</p>
+            </button>
           </div>
           <div class="columnSeven col">
-            <button class="numBtn"><p>M-</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>M-</p>
+            </button>
           </div>
-          <div class="spaceHolder col"></div>
         </div>
         <!-- END OF calculatorButtons ROW -->
 
         <div class="calculatorButtons row">
-          <div class="spaceHolder col"></div>
           <div class="columnOne col">
-            <button class="numBtn"><p class="orangeCol">AC</p></button>
+            <button class="btn btn-warning numBtn" style="border-radius: 100%">
+              <p class="orangeCol">AC</p>
+            </button>
           </div>
           <div class="columnTwo col">
-            <button class="numBtn"><p>0</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>0</p>
+            </button>
           </div>
           <div class="columnThree col">
-            <button class="numBtn"><p>00</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>00</p>
+            </button>
           </div>
           <div class="columnFour col">
-            <button class="numBtn"><p>.</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>.</p>
+            </button>
           </div>
           <div class="columnFive col">
-            <button class="numBtn"><p>+</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>+</p>
+            </button>
           </div>
           <div class="columnSix col">
-            <button class="numBtn"><p>=</p></button>
+            <button
+              class="btn btn-primary btn-lg numBtn"
+              style="border-radius: 100%"
+            >
+              <p>=</p>
+            </button>
           </div>
           <div class="columnSeven col">
-            <button class="numBtn"><p>M+</p></button>
+            <button class="btn btn-primary numBtn" style="border-radius: 100%">
+              <p>M+</p>
+            </button>
           </div>
-          <div class="spaceHolder col"></div>
         </div>
         <!-- END OF calculatorButtons ROW -->
       </div>
       <!-- END calculatorButtonBox Container -->
+      <div class="row justify-content-center">
+        <div class="col-2 d-none d-md-block"></div>
+      </div>
+      <!-- END spaceHolder ROW -->
     </div>
     <!-- END calculatorContainer CONTAINER -->
   </body>
