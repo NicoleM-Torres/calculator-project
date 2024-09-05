@@ -7,7 +7,7 @@ let displayValue = "";
 
 //FUNCTION -- DISPLAY TO PAGE
 const updateDisplay = (value) => {
-  display.textContent = value || "0"; // Default to "0" when empty
+  display.textContent = value || "0"; // Default to "0" when no user entry
 };
 
 //FUNCTION -- MANAGE BUTTON CLICKS
