@@ -1,46 +1,56 @@
 // GET BUTTON INFO
-const buttons = document.querySelectorAll(".numBtn p");
-const display = document.querySelector(".displayBox h1");
+const buttons = document.querySelectorAll(".numBtn");
+const display = document.querySelector("#display");
 
-// INIT DISPLAY
+// INT DISPLAY VAL
 let displayValue = "";
 
-//FUNCTION -- UPDATE DISPLAY
+//FUNCTION -- DISPLAY TO PAGE
 const updateDisplay = (value) => {
-  display.textContent = value;
+  display.textContent = value || "0"; // Default to "0" when empty
 };
 
-// FUNCTION -- CLICKS
+//FUNCTION -- MANAGE BUTTON CLICKS
 buttons.forEach((button) => {
-  button.parentElement.addEventListener("click", () => {
+  button.addEventListener("click", () => {
     const buttonValue = button.textContent;
 
-    // Handle CLEAR BUTTON (CLEARS DISPLAY)
+    //AC BUTTON TO FUNCTION
     if (buttonValue === "AC") {
       displayValue = "";
       updateDisplay(displayValue);
       return;
     }
 
-    // HANDLES CE BUTTON (CLEAR USER ENTRY)
+    //CLEAR ALL USER ENTRY BUTTON
     if (buttonValue === "CE") {
       displayValue = displayValue.slice(0, -1);
       updateDisplay(displayValue);
       return;
     }
 
-    // = BUTTON
+    //= BUTTON
     if (buttonValue === "=") {
       try {
-        displayValue = eval(displayValue);
+        displayValue = eval(displayValue); // VERIFIES EXPRESSION
         updateDisplay(displayValue);
+        displayValue = ""; // CLEARS AFTER VERIFYING
       } catch (error) {
         updateDisplay("Error");
+        displayValue = "";
       }
       return;
     }
 
-    // OTHER BUTTON CLICKS
+    //PREVENTS HAVING DIFFERENT OPERATORS AT THE SAME TIME
+    if (["+", "-", "*", "/", "%"].includes(buttonValue)) {
+      const lastChar = displayValue.slice(-1);
+      if (["+", "-", "*", "/", "%"].includes(lastChar)) {
+        displayValue = displayValue.slice(0, -1);
+      }
+    }
+
+    //UPDATES DISPLAY VALUE TO THE BUTTON CLICKED VALUES
     displayValue += buttonValue;
     updateDisplay(displayValue);
   });

@@ -24,71 +24,71 @@
 /* #endregion */
 
 /* #region header */
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.headerRow {
+  padding: 20px 0;
+}
+/* 
 .by {
   text-align: right;
-}
+} */
 /* #endregion */
 
 /* #region calculator display design*/
-
-/* #endregion */
-
-/* #region calculator function*/
-
+.displayBox {
+  background: aliceblue;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+  min-height: 40px;
+  text-align: right; 
+  overflow: hidden; 
+}
+.calculatorBox {
+  background-color: #e1afd1;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
 /* #endregion */
 
 /* #region calculator buttons design*/
-
-.columnOne,
-.columnTwo,
-.columnThree,
-.columnFour,
-.columnFive,
-.columnSix,
-.columnSeven {
-  padding: 5px;
-}
-
-.displayRow {
-  text-align: right;
-  padding-bottom: 10px;
-}
-
-.displayBox {
-  background: aliceblue;
+.numBtn {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  margin-bottom: 10px;
   border-radius: 15px;
 }
 
-.calculatorBox {
-  background-color: #e1afd1;
-  /* margin:0px; */
-  padding: 30px;
-  border-radius: 30px;
-}
-
-.numBtn {
-  color: rgb(43, 174, 226);
-  text-align: center;
-  /* padding: 20px; */
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  /* align-items: center; */
-  /* justify-content: center; */
-}
-
-p {
-  text-align: center;
-  align-content: center;
-  font-family: "Exo 2", sans-serif;
-  font-weight: bold;
-  color: black;
-}
 .calculatorContainer {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically if needed */
-  height: 100vh; /* Full viewport height */
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+}
+
+/* ADJUST FONT FOR SMALLER SCREENS */
+@media (max-width: 768px) {
+  .displayBox h1 {
+    font-size: 32px;
+  }
+
+  .numBtn {
+    height: 50px;
+    font-size: 19.2px;
+  }
+
+  /* LESS PADDING ON SMALLER SCREEN */
+  .calculatorBox {
+    padding: 15px;
+  }
 }
 
 /* #endregion */
